@@ -1,0 +1,112 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  background: #141414;
+}
+
+#search-section {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  background-color: #212121;
+}
+
+#search-section input#search-input {
+  display: inline-block;
+  padding: 5px;
+  background-color: black;
+  border: 1px solid grey;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-size: 1.3rem;
+  color: grey;
+}
+
+.shows-data-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.show-box {
+  position: relative;
+  margin: 5px;
+  padding: 10px;
+  width: 320px;
+  color: #a5a5a5;
+  background-color: #323232;
+  font-size: 1.4rem;
+  border-radius:10px;
+}
+
+.show-box img {
+  width: 100%;
+}
+
+.show-box div {
+  margin: 4px;
+}
+
+.show-box div.show-genres {
+  color: #7f7f7f;
+  font-size: 1rem;
+}
+
+.show-overview {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right:0;
+  padding: 2rem;
+  background-color: #323232;
+  opacity: 0;
+  transition: opacity 0.3s ease-in;
+  overflow-y: scroll;
+  font-size: 1rem;
+}
+
+.show-box:hover .show-overview {
+  opacity: 1;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: black grey;
+}
+
+*::-webkit-scrollbar {
+  width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background: rgb(68, 67, 67);
+}
+
+*::-webkit-scrollbar-thumb {
+  background: rgb(24, 24, 24);
+  border-radius: 20px;
+}
+
+#tv-maze-info {
+  padding: 10px;
+  text-align: center;
+}
+
+#tv-maze-info a {
+  color: grey;
+}
+
+.show-url {
+  word-wrap: break-word;
+}
+
+.show-url a {
+  font-style: italic;
+  text-decoration: none;
+  color: #a5a5a5;
+}
